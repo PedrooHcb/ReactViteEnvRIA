@@ -1,4 +1,3 @@
-import './FirstComp.css'
 
 /* export default function FirstComp() {
   
@@ -18,9 +17,9 @@ export default function FirstComp(props: Props) {
     const textoMaiusculo = textoInserido.toUpperCase();
     
     return (
-      <>
-        <h1>Texto para maiúsculo abaixo:</h1>
-        <h2>{textoMaiusculo.toUpperCase()}</h2>
-      </>
+      <div className='form-group p-2 border border-primary rounded '>
+        <h2>Texto em maiúsculo abaixo:</h2>
+        <h5>{textoMaiusculo.toUpperCase()}</h5>
+      </div>
     )
 }
