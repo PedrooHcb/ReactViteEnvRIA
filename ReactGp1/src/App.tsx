@@ -1,7 +1,6 @@
 import './App.css'
 
-import FirstComp from './Components/FirstComp.jsx'
-import ItemList from './Components/ItemList.js'
+import AppRoutes from './Rotas/Routes.js'
 
 export default function App() {
   return (
@@ -11,8 +10,7 @@ export default function App() {
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
       crossOrigin="anonymous"/>
       
-      <FirstComp texto="Me transforme em maiúsculo." />
-      <ItemList />
+      <AppRoutes></AppRoutes>
     </>
   )
 }

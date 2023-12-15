@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 
 import AddItem from './AddItem';
+import NavBar from './NavBar';
 
 interface Item {
     id: number;
@@ -47,10 +48,9 @@ const ItemList = () => {
 
     return (
         <div className='form-group p-2 border border-secondary rounded '>
+            <NavBar/>
             <h1 className='border border-secondary'>Lista de Itens</h1>
-            
             <AddItem onAddItem={fetchItems} />
-
             <table className='table'>
                 <thead className='thead-dark'>
                     <tr>
